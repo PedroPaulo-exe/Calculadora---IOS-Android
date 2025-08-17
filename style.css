@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Orbitron:wght@400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;       
+    
+    font-family: "Orbitron", sans-serif;
+    
+}
+body{
+     background-color: #1a1a2e;
+}
+header{
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;        
+    animation: TextAnimation 0.7s ease-out;
+}
+@keyframes TextAnimation {
+    from{opacity: 0; transform:translateY(-30px)}
+    to{opacity: 1;transform:translateY(0px)}
+}
+header h1{
+    font-size: 4vw;  
+    margin-top: 12vh;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(25, 145, 243);
+    
+}
+p{
+    font-size: 1.5vw;  
+    margin-top: 1vh;
+    color: rgb(169, 221, 236);    
+}
+.container-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10vh 5vw;
+    gap: 13vw;
+    flex-wrap: wrap;   
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;    
+    flex-direction: column;    
+    border-radius: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+.container:hover{
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 195, 255, 0.2);
+}
+.text{
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    margin-bottom: 1.5rem;
+    color: #00c3ff;
+    text-align: center;
+    text-shadow: 0 0 8px rgba(0, 195, 255, 0.5);
+}
+.android, .apple{
+    width: 15vw;
+    min-width: 10vw;
+    max-width: 20vw;
+    filter: grayscale(100%);
+    transition: all 1.2s cubic-bezier(0.075, 0.82, 0.165, 1.4);    
+    will-change: transform;       
+    
+}
+.android:hover, .apple:hover{
+    filter: grayscale(0%);
+    transform: scale(1.2);
+    z-index: 2;
+}

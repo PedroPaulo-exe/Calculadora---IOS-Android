@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora-IOS</title>
+    <link rel="stylesheet" href="style-apple.css">
+</head>
+<body>
+    <div id="calculator">
+        <div class="display-style">
+            <input id="display" readonly>
+        </div>
+        <section class="number-style">
+            <button onclick="Limpar()" class="cinza_claro">AC</button>
+            <button onclick="Teclas('±')" class="cinza_claro">±</button>
+            <button onclick="Teclas('%')" class="cinza_claro">%</button>
+            <button onclick="Teclas('/')" class="laranja">÷</button>
+            <button onclick="Teclas('7')">7</button>
+            <button onclick="Teclas('8')">8</button>
+            <button onclick="Teclas('9')">9</button>        
+            <button onclick="Teclas('*')" class="laranja">x</button>
+            <button onclick="Teclas('4')">4</button>
+            <button onclick="Teclas('5')">5</button>
+            <button onclick="Teclas('6')">6</button>
+            <button onclick="Teclas('-')" class="laranja">-</button>
+            <button onclick="Teclas('1')">1</button>
+            <button onclick="Teclas('2')">2</button>
+            <button onclick="Teclas('3')">3</button>
+            <button onclick="Teclas('+')" class="laranja">+</button>
+            <button onclick="Teclas('00')">00</button>
+            <button onclick="Teclas('0')">0</button>
+            <button onclick="Teclas('.')">.</button>
+            <button onclick="calcular()" class="laranja">=</button>        
+        </section>
+    </div>
+</body>
+    <script src="script-ios.js"></script>
+</html>
